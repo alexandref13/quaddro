@@ -1,16 +1,18 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import { Container } from './styles/pages';
+import { Form } from './components/Form';
+import { Feed } from './components/Feed';
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <Container>
       <Head>
-        <title>Quaddro</title>
+        <title>Quaddro | Home</title>
       </Head>
-
-      <h1>Hello World</h1>
-    </div>
+      <Form />
+      <Feed />
+    </Container>
   );
 };
 
