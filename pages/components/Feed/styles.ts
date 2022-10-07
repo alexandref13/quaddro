@@ -6,6 +6,11 @@ export const Container = styled.div`
   max-width: 516px;
   width: 516px;
 
+  @media (max-width: 530px) {
+    width: 350px;
+
+  }
+
   font-size: 1rem;
   color: #ffffff;
 `;

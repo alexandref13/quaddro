@@ -5,6 +5,11 @@ export const Container = styled.div`
   max-width: 516px;
   width: 516px;
 
+  @media (max-width: 530px) {
+    width: 350px;
+
+  }
+
   border-radius: .5rem;
   background-color: #313131;
   
