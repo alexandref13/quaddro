@@ -4,13 +4,15 @@ import { format } from 'date-fns';
 
 import { useContext } from 'react';
 import { FeedContext } from '../../contexts/Feed';
+import { SearchContext } from '../../contexts/Search';
 
 export const Feed = () => {
-  const { jsons, handleDeletePost } = useContext(FeedContext);
+  const { handleDeletePost } = useContext(FeedContext);
+  const { filteredSearch } = useContext(SearchContext);
 
   return (
     <Container>
-      {jsons.map((json) => {
+      {filteredSearch.map((json) => {
         //NOTE -> Formatando as horas para mostrar ao usuário.
         var startHoursToDate = new Date(json.hoursStart);
         var endHoursToDate = new Date(json.hoursEnd);

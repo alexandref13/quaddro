@@ -46,6 +46,12 @@ export const Send = styled.button.attrs(
     line-height: 1.29;
     letter-spacing: normal;
     cursor: ${(props) => (props.isAbleToPost ? `pointer`: `default` )};
+    transition: background-color .3s;
+
+    &:hover{
+      background-color:${(props) =>
+      props.isAbleToPost ? `#61A101` : `#5f5f5f`}
+    }
 `
 
 export const ErrorMessage = styled.p`

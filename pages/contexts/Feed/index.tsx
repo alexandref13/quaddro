@@ -10,7 +10,7 @@ type FeedProviderProps = {
   children: ReactNode;
 };
 
-interface JsonProps {
+export interface JsonProps {
   id: number;
   title: string;
   hoursStart: string;

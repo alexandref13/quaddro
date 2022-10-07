@@ -124,6 +124,8 @@ export const FormProvider = ({ children }: FormProviderProps) => {
             hoursEnd
           }
         ]);
+
+        handleClear();
       } else {
         setErrorMessage('Este horário já está reservado');
       }
